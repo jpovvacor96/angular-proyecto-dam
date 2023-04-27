@@ -1,0 +1,11 @@
+<div class="mb-3">
+  <label for="nombre" class="form-label">Nombre: </label>
+  <input type="text" class="form-control" id="nombre" placeholder="Pedro" [(ngModel)]="nombre">
+</div>
+<div class="mb-3">
+  <label for="apellidos" class="form-label">Apellidos: </label>
+  <input type="text" class="form-control" id="apellidos" placeholder="Sánchez" [(ngModel)]="apellidos">
+</div>
+<h2>Datos introducidos:</h2>
+<p>Nombre: {{nombre}}</p>
+<p>Apellidos: {{apellidos}}</p>
