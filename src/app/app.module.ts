@@ -13,6 +13,8 @@ import { Ejercicio001Component } from './component/ejercicio001/ejercicio001.com
 import { Ejercicio002Component } from './component/ejercicio002/ejercicio002.component';
 import { Ejercicio003Component } from './component/ejercicio003/ejercicio003.component';
 import { Ejercicio004Component } from './component/ejercicio004/ejercicio004.component';
+import {HttpClientModule} from '@angular/common/http';
+import { DetalleComponent } from './component/ejercicio004/detalle/detalle.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { Ejercicio004Component } from './component/ejercicio004/ejercicio004.com
     Ejercicio001Component,
     Ejercicio002Component,
     Ejercicio003Component,
-    Ejercicio004Component
+    Ejercicio004Component,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
