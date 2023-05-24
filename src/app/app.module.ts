@@ -12,9 +12,9 @@ import { HomeComponent } from './component/home/home.component';
 import { Ejercicio001Component } from './component/ejercicio001/ejercicio001.component';
 import { Ejercicio002Component } from './component/ejercicio002/ejercicio002.component';
 import { Ejercicio003Component } from './component/ejercicio003/ejercicio003.component';
-import { Ejercicio004Component } from './component/ejercicio004/ejercicio004.component';
 import {HttpClientModule} from '@angular/common/http';
-import { DetalleComponent } from './component/ejercicio004/detalle/detalle.component';
+import { Ejercicio004Component } from './component/ejercicio004/ejercicio004.component';
+import { Ejercicio005Component } from './component/ejercicio005/ejercicio005.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { DetalleComponent } from './component/ejercicio004/detalle/detalle.compo
     Ejercicio002Component,
     Ejercicio003Component,
     Ejercicio004Component,
-    DetalleComponent
+    Ejercicio005Component,
   ],
   imports: [
     BrowserModule,

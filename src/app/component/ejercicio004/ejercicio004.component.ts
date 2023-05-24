@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Ejercicio004Service } from './../../services/ejercicio004.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,22 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ejercicio004Component implements OnInit{
 
+  empleados:any;
+
+  constructor(private Ejercicio004Service: Ejercicio004Service){
+
+  }
+
+  /**
+   * Muestra al inicio todos los datos contenidos en la API
+   */
   ngOnInit(): void {
     this.recuperarTodos();
   }
 
-  empleados:any;
-
-  constructor(private Ejercicio004Service: Ejercicio004Service, private router: Router){
-
-  }
-
   recuperarTodos(){
     this.Ejercicio004Service.recuperarTodos().subscribe(result => this.empleados=result);
-  }
-
-  mostrarDetalle(id: number){
-    this.router.navigate(['detalle', id]);
   }
 
 }

@@ -1,0 +1,19 @@
+{
+  "frutas": [
+  {
+  "id": 1,
+  "descripcion": "Naranjas",
+  "precio": 25
+  },
+  {
+  "id": 2,
+  "descripcion": "Manzanas",
+  "precio": 35
+  },
+  {
+  "id": 3,
+  "descripcion": "Platanos",
+  "precio": 40
+  }
+  ]
+}

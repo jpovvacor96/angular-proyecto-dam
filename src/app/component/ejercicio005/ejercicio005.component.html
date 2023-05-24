@@ -1,0 +1,23 @@
+<div class="container mt-2 shadow-lg rounded p-2">
+  <h2>ANGULAR - PHP - MySQL (CRUD)</h2>
+  <table class = "table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Borrar</th>
+        <th>Seleccionar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let fr of frutas">
+        <th>{{fr.id}}</th>
+        <th>{{fr.descripcion}}</th>
+        <th>{{fr.precio}}</th>
+        <th><button (click)="baja(fr.id)" class="btn btn-danger">Borrar</button></th>
+        <th><button (click)="seleccionar(fr.id)" class="btn btn-info">Seleccionar</button></th>
+      </tr>
+    </tbody>
+  </table>
+</div>
