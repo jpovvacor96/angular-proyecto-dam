@@ -1,19 +1,29 @@
 {
   "frutas": [
-  {
-  "id": 1,
-  "descripcion": "Naranjas",
-  "precio": 25
-  },
-  {
-  "id": 2,
-  "descripcion": "Manzanas",
-  "precio": 35
-  },
-  {
-  "id": 3,
-  "descripcion": "Platanos",
-  "precio": 40
-  }
+    {
+      "id": 1,
+      "descripcion": "Naranjas",
+      "precio": 30
+    },
+    {
+      "id": 2,
+      "descripcion": "Manzanas",
+      "precio": 35
+    },
+    {
+      "id": 4,
+      "descripcion": "Ciruelas",
+      "precio": 12
+    },
+    {
+      "id": 5,
+      "descripcion": "Sandías",
+      "precio": 100
+    },
+    {
+      "id": 6,
+      "descripcion": "Melones",
+      "precio": 30
+    }
   ]
 }

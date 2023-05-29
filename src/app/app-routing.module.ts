@@ -9,6 +9,7 @@ import { Ejercicio001Component } from './component/ejercicio001/ejercicio001.com
 import { Ejercicio002Component } from './component/ejercicio002/ejercicio002.component';
 import { Ejercicio003Component } from './component/ejercicio003/ejercicio003.component';
 import { Ejercicio004Component } from './component/ejercicio004/ejercicio004.component';
+import { Ejercicio005Component } from './component/ejercicio005/ejercicio005.component';
 import { FooterComponent } from './footer/footer.component';
 const routes: Routes = [
   {path: 'actividad1', component: Actividad1Component},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'ejercicio002', component: Ejercicio002Component},
   {path: 'ejercicio003', component: Ejercicio003Component},
   {path: 'ejercicio004', component: Ejercicio004Component},
+  {path: 'ejercicio005', component: Ejercicio005Component},
   //Redirige por defecto a la carpeta home
   {path:"", redirectTo:"/home", pathMatch:"full"},
   {path:"**", redirectTo:"/home"}
