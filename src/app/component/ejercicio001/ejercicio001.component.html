@@ -1,1 +1,14 @@
-<p>ejercicio001 works!</p>
+<table border="1" *ngIf="hayRegistros()">
+  <tr>
+  <td>ID</td><td>Nombre</td><td>Email</td><td>Edad</td><td>Idioma</td>
+  </tr>
+  <tr *ngFor="let art of personas">
+  <td>{{art.ID}}</td>
+  <td>{{art.Nombre}}</td>
+  <td>{{art.Email}}</td>
+  <td>{{art.Edad}}</td>
+  <td>{{art.Idioma}}</td>
+  <td><button (click)="seleccionar(art)">Seleccionar</button></td>
+  <td><button (click)="borrar(art.ID)">Borrar?</button></td>
+  </tr>
+</table>

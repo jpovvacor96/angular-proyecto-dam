@@ -1,20 +1,23 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
 
-/**
- * Servicio del ejercicio 003 para trabajar con los datos de la API REST
- */
 export class Ejercicio003Service {
+
+  url = 'http://localhost:3000/empleados';
 
   constructor(private http: HttpClient) { }
 
-  url='https://jsonplaceholder.typicode.com/posts';
-
-  mostrarTodos(){
+  recuperarTodos() {
     return this.http.get(this.url);
   }
+
+  recuperarUno(id: number) {
+    return this.http.get(`${this.url}/${id}`);
+  }
+
 }

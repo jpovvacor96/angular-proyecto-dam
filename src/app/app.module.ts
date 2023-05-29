@@ -15,6 +15,7 @@ import { Ejercicio003Component } from './component/ejercicio003/ejercicio003.com
 import {HttpClientModule} from '@angular/common/http';
 import { Ejercicio004Component } from './component/ejercicio004/ejercicio004.component';
 import { Ejercicio005Component } from './component/ejercicio005/ejercicio005.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { Ejercicio005Component } from './component/ejercicio005/ejercicio005.com
     Ejercicio003Component,
     Ejercicio004Component,
     Ejercicio005Component,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
