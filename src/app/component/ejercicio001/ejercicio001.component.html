@@ -1,14 +1,47 @@
-<table border="1" *ngIf="hayRegistros()">
-  <tr>
-  <td>ID</td><td>Nombre</td><td>Email</td><td>Edad</td><td>Idioma</td>
-  </tr>
-  <tr *ngFor="let art of personas">
-  <td>{{art.ID}}</td>
-  <td>{{art.Nombre}}</td>
-  <td>{{art.Email}}</td>
-  <td>{{art.Edad}}</td>
-  <td>{{art.Idioma}}</td>
-  <td><button (click)="seleccionar(art)">Seleccionar</button></td>
-  <td><button (click)="borrar(art.ID)">Borrar?</button></td>
-  </tr>
-</table>
+<div class="container mt-2 shadow-lg rounded p-2">
+  <h2>CRUD DE USUARIOS SIN PERSISTENCIA</h2>
+  <table class = "table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Edad</th>
+        <th>Idioma</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of personas">
+        <th>{{persona.ID}}</th>
+        <th>{{persona.Nombre}}</th>
+        <th>{{persona.Email}}</th>
+        <th>{{persona.Edad}}</th>
+        <th>{{persona.Idioma}}</th>
+        <th><button (click)="borrar(persona.ID)" class="btn btn-danger">Eliminar</button></th>
+        <th><button (click)="seleccionar(persona)" class="btn btn-info">Seleccionar</button></th>
+      </tr>
+    </tbody>
+  </table>
+  <div class="form-group mb-3">
+    <label for="ID" class="form-label">ID</label>
+    <input type="number" class="form-control" id="descripcion" [(ngModel)]="art.ID" name="ID">
+  </div>
+  <div class="form-group mb-3">
+    <label for="Nombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="Nombre" [(ngModel)]="art.Nombre" name="Nombre">
+  </div>
+  <div class="form-group mb-3">
+    <label for="Email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="Email" [(ngModel)]="art.Email" name="Email">
+  </div>
+  <div class="form-group mb-3">
+    <label for="Edad" class="form-label">Edad</label>
+    <input type="number" class="form-control" id="Edad" [(ngModel)]="art.Edad" name="Edad">
+  </div>
+  <div class="form-group mb-3">
+    <label for="Idioma" class="form-label">Idioma</label>
+    <input type="text" class="form-control" id="Idioma" [(ngModel)]="art.Idioma" name="Idioma">
+  </div>
+  <button (click)="agregar()" class="btn btn-success me-2">Agregar</button>
+  <button (click)="modificar()" class="btn btn-warning me-2">Modificar</button>
+</div>

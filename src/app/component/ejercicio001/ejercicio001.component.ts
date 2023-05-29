@@ -70,8 +70,8 @@ export class Ejercicio001Component {
           this.personas[x].Idioma=this.art.Idioma;
           return;
         }
-        alert('No existe el ID de la persona indicada');
       }
+      alert('No existe el ID de la persona indicada');
     }
 
 }

@@ -1,7 +1,33 @@
-<h1>POSTS</h1>
-<ul>
-  <li *ngFor="let e of empleados">
-    <h3>{{e.first_name}}</h3>
-    <p>{{e.email}}</p>
-  </li>
-</ul>
+<div class="container mt-2 shadow-lg rounded p-2">
+  <h2>CRUD DE FRUTAS</h2>
+  <table class = "table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Borrar</th>
+        <th>Seleccionar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let fr of frutas">
+        <th>{{fr.id}}</th>
+        <th>{{fr.descripcion}}</th>
+        <th>{{fr.precio}}</th>
+        <th><button (click)="eliminar(fr.id)" class="btn btn-danger">Eliminar</button></th>
+        <th><button (click)="seleccionar(fr)" class="btn btn-info">Seleccionar</button></th>
+      </tr>
+    </tbody>
+  </table>
+  <div class="form-group mb-3">
+    <label for="descripcion" class="form-label">Descripción</label>
+    <input type="text" class="form-control" id="descripcion" [(ngModel)]="fruta.descripcion" name="descripcion">
+  </div>
+  <div class="form-group mb-3">
+    <label for="descripcion" class="form-label">Precio</label>
+    <input type="number" class="form-control" id="precio" [(ngModel)]="fruta.precio" name="precio">
+  </div>
+  <button (click)="insertar()" class="btn btn-success me-2">Insertar</button>
+  <button (click)="modificar(fruta.id)" class="btn btn-warning me-2">Modificar</button>
+</div>
